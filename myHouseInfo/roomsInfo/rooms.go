@@ -12,6 +12,7 @@ type Rooms struct {
 func RoomsList() []Rooms {
 	bedroom := Rooms{"спальня", 12, 9.3, 2.5}
 	kitchen := Rooms{"кухня", 8.2, 6.7, 2.5}
+
 	return []Rooms{bedroom, kitchen}
 }
 
