@@ -3,16 +3,16 @@ package familyInfo
 import "fmt"
 
 type Persons struct {
-	name    string
-	surname string
-	age     float64
-	height  float64
+	Name    string
+	Surname string
+	Age     float64
+	Height  float64
 }
 
 type Pets struct {
-	name  string
-	breed string
-	age   float64
+	Name  string
+	Breed string
+	Age   float64
 }
 
 func PersonsList() []Persons {
@@ -32,7 +32,7 @@ func PetsList() []Pets {
 func ShowPersons(persons []Persons) {
 	fmt.Println("Семья:")
 	for _, person := range persons {
-		fmt.Print(person.name, " ", person.surname, " ", person.age, " ", person.height, "см\n")
+		fmt.Print(person.Name, " ", person.Surname, " ", person.Age, " ", person.Height, "см\n")
 	}
 	fmt.Print("\n")
 }
@@ -40,7 +40,7 @@ func ShowPersons(persons []Persons) {
 func ShowPets(pets []Pets) {
 	fmt.Println("Домашние животные:")
 	for _, pet := range pets {
-		fmt.Print(pet.name, " ", pet.breed, " ", pet.age, "\n")
+		fmt.Print(pet.Name, " ", pet.Breed, " ", pet.Age, "\n")
 	}
 	fmt.Print("\n")
 }

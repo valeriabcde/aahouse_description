@@ -3,39 +3,39 @@ package appliancesInfo
 import "fmt"
 
 type TVs struct {
-	name            string
-	color           string
-	screen_diagonal float64
+	Name            string
+	Color           string
+	Screen_diagonal float64
 }
 
 type Laptops struct {
-	name            string
-	color           string
-	screen_diagonal float64
+	Name            string
+	Color           string
+	Screen_diagonal float64
 }
 
 type Stoves struct {
-	name   string
-	color  string
-	length float64
-	width  float64
-	height float64
+	Name   string
+	Color  string
+	Length float64
+	Width  float64
+	Height float64
 }
 
 type Conditioners struct {
-	name   string
-	color  string
-	length float64
-	width  float64
-	power  float64
+	Name   string
+	Color  string
+	Length float64
+	Width  float64
+	Power  float64
 }
 
 type Fridges struct {
-	name   string
-	color  string
-	length float64
-	width  float64
-	height float64
+	Name   string
+	Color  string
+	Length float64
+	Width  float64
+	Height float64
 }
 
 func TVsList() []TVs {
@@ -72,9 +72,9 @@ func FridgesList() []Fridges {
 }
 
 func ShowTVs(tvs []TVs) {
-	fmt.Println("Телевизоры:")
+	fmt.Println("Телевизоры и ноутбуки:")
 	for _, oneOfTVs := range tvs {
-		fmt.Print(oneOfTVs.name, " ", oneOfTVs.color, " ", oneOfTVs.screen_diagonal, "''\n")
+		fmt.Print(oneOfTVs.Name, " ", oneOfTVs.Color, " ", oneOfTVs.Screen_diagonal, "''\n")
 	}
 	fmt.Print("\n")
 }
@@ -82,15 +82,15 @@ func ShowTVs(tvs []TVs) {
 func ShowLaptops(laptops []Laptops) {
 	fmt.Println("Ноутбуки:")
 	for _, oneOfLaptops := range laptops {
-		fmt.Print(oneOfLaptops.name, " ", oneOfLaptops.color, " ", oneOfLaptops.screen_diagonal, "''\n")
+		fmt.Print(oneOfLaptops.Name, " ", oneOfLaptops.Color, " ", oneOfLaptops.Screen_diagonal, "''\n")
 	}
 	fmt.Print("\n")
 }
 
 func ShowStoves(stoves []Stoves) {
-	fmt.Println("Плиты:")
+	fmt.Println("Плиты и холодильники:")
 	for _, oneOfStoves := range stoves {
-		fmt.Print(oneOfStoves.name, " ", oneOfStoves.color, " ", oneOfStoves.length, "м ", oneOfStoves.width, "м ", oneOfStoves.height, "м\n")
+		fmt.Print(oneOfStoves.Name, " ", oneOfStoves.Color, " ", oneOfStoves.Length, "м ", oneOfStoves.Width, "м ", oneOfStoves.Height, "м\n")
 	}
 	fmt.Print("\n")
 }
@@ -98,7 +98,7 @@ func ShowStoves(stoves []Stoves) {
 func ShowConditioners(conditioners []Conditioners) {
 	fmt.Println("Кондиционеры:")
 	for _, oneOfConditioners := range conditioners {
-		fmt.Print(oneOfConditioners.name, " ", oneOfConditioners.color, " ", oneOfConditioners.length, "м ", oneOfConditioners.width, "м ", oneOfConditioners.power, "кВт\n")
+		fmt.Print(oneOfConditioners.Name, " ", oneOfConditioners.Color, " ", oneOfConditioners.Length, "м ", oneOfConditioners.Width, "м ", oneOfConditioners.Power, "кВт\n")
 	}
 	fmt.Print("\n")
 }
@@ -106,7 +106,7 @@ func ShowConditioners(conditioners []Conditioners) {
 func ShowFridges(fridges []Fridges) {
 	fmt.Println("Холодильники:")
 	for _, oneOfFridges := range fridges {
-		fmt.Print(oneOfFridges.name, " ", oneOfFridges.color, " ", oneOfFridges.length, "м ", oneOfFridges.width, "м ", oneOfFridges.height, "м\n")
+		fmt.Print(oneOfFridges.Name, " ", oneOfFridges.Color, " ", oneOfFridges.Length, "м ", oneOfFridges.Width, "м ", oneOfFridges.Height, "м\n")
 	}
 	fmt.Print("\n")
 }

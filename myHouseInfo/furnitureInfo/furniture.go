@@ -3,42 +3,43 @@ package furnitureInfo
 import "fmt"
 
 type Tables struct {
-	name   string
-	color  string
-	length float64
-	width  float64
-	height float64
+	Name   string
+	Color  string
+	Length float64
+	Width  float64
+	Height float64
 }
 
 type Chairs struct {
-	name   string
-	color  string
-	length float64
-	width  float64
+	Name   string
+	Color  string
+	Length float64
+	Width  float64
+	Height float64
 }
 
 type Beds struct {
-	name   string
-	color  string
-	size   string
-	length float64
-	width  float64
+	Name   string
+	Color  string
+	Size   string
+	Length float64
+	Width  float64
 }
 
 type StorageFurniture struct {
-	name   string
-	color  string
-	length float64
-	width  float64
-	height float64
+	Name   string
+	Color  string
+	Length float64
+	Width  float64
+	Height float64
 }
 
 type Lamps struct {
-	name   string
-	color  string
-	length float64
-	width  float64
-	power  float64
+	Name   string
+	Color  string
+	Length float64
+	Width  float64
+	Power  float64
 }
 
 func TablesList() []Tables {
@@ -49,11 +50,11 @@ func TablesList() []Tables {
 }
 
 func ChairsList() []Chairs {
-	chair1 := Chairs{"компьютерное кресло", "серое", 0.5, 0.6}
-	chair2 := Chairs{"стул", "синий", 0.5, 0.5}
-	chair3 := Chairs{"стул", "красный", 0.5, 0.5}
-	chair4 := Chairs{"стул", "желтый", 0.5, 0.5}
-	chair5 := Chairs{"стул", "зеленый", 0.5, 0.5}
+	chair1 := Chairs{"компьютерное кресло", "серое", 0.5, 0.6, 1.2}
+	chair2 := Chairs{"стул", "синий", 0.5, 0.5, 0.9}
+	chair3 := Chairs{"стул", "красный", 0.5, 0.5, 0.9}
+	chair4 := Chairs{"стул", "желтый", 0.5, 0.5, 0.9}
+	chair5 := Chairs{"стул", "зеленый", 0.5, 0.5, 0.9}
 
 	return []Chairs{chair1, chair2, chair3, chair4, chair5}
 }
@@ -75,7 +76,7 @@ func StorageFurnitureList() []StorageFurniture {
 
 func LampsList() []Lamps {
 	chandelier1 := Lamps{"люстра", "белая", 0.4, 0.4, 100}
-	chandelier2 := Lamps{"люстра", "бесцветная", 0.6, 0.6, 100}
+	chandelier2 := Lamps{"люстра", "прозрачная", 0.6, 0.6, 100}
 	tableLamp := Lamps{"лампа", "серая", 0.15, 0.1, 40}
 
 	return []Lamps{chandelier1, chandelier2, tableLamp}
@@ -83,9 +84,9 @@ func LampsList() []Lamps {
 }
 
 func ShowTables(tables []Tables) {
-	fmt.Println("Столы:")
+	fmt.Println("Столы, стулья, хранение:")
 	for _, oneOfTables := range tables {
-		fmt.Print(oneOfTables.name, " ", oneOfTables.color, " ", oneOfTables.length, "м ", oneOfTables.width, "м ", oneOfTables.height, "м\n")
+		fmt.Print(oneOfTables.Name, " ", oneOfTables.Color, " ", oneOfTables.Length, "м ", oneOfTables.Width, "м ", oneOfTables.Height, "м\n")
 	}
 	fmt.Print("\n")
 }
@@ -93,7 +94,7 @@ func ShowTables(tables []Tables) {
 func ShowChairs(chairs []Chairs) {
 	fmt.Println("Стулья:")
 	for _, oneOfChairs := range chairs {
-		fmt.Print(oneOfChairs.name, " ", oneOfChairs.color, " ", oneOfChairs.length, "м ", oneOfChairs.width, "м\n")
+		fmt.Print(oneOfChairs.Name, " ", oneOfChairs.Color, " ", oneOfChairs.Length, "м ", oneOfChairs.Width, "м ", oneOfChairs.Height, "м\n")
 	}
 	fmt.Print("\n")
 }
@@ -101,7 +102,7 @@ func ShowChairs(chairs []Chairs) {
 func ShowBeds(beds []Beds) {
 	fmt.Println("Кровати:")
 	for _, oneOfBeds := range beds {
-		fmt.Print(oneOfBeds.name, " ", oneOfBeds.color, " ", oneOfBeds.size, " ", oneOfBeds.length, "м ", oneOfBeds.width, "м\n")
+		fmt.Print(oneOfBeds.Name, " ", oneOfBeds.Color, " ", oneOfBeds.Size, " ", oneOfBeds.Length, "м ", oneOfBeds.Width, "м\n")
 	}
 	fmt.Print("\n")
 }
@@ -109,7 +110,7 @@ func ShowBeds(beds []Beds) {
 func ShowStorageFurniture(storageFurniture []StorageFurniture) {
 	fmt.Println("Мебель для хранения:")
 	for _, oneOfStorageFurniture := range storageFurniture {
-		fmt.Print(oneOfStorageFurniture.name, " ", oneOfStorageFurniture.color, " ", oneOfStorageFurniture.length, "м ", oneOfStorageFurniture.width, "м ", oneOfStorageFurniture.height, "м\n")
+		fmt.Print(oneOfStorageFurniture.Name, " ", oneOfStorageFurniture.Color, " ", oneOfStorageFurniture.Length, "м ", oneOfStorageFurniture.Width, "м ", oneOfStorageFurniture.Height, "м\n")
 	}
 	fmt.Print("\n")
 }
@@ -117,7 +118,7 @@ func ShowStorageFurniture(storageFurniture []StorageFurniture) {
 func ShowLamps(lamps []Lamps) {
 	fmt.Println("Лампы:")
 	for _, oneOfLamps := range lamps {
-		fmt.Print(oneOfLamps.name, " ", oneOfLamps.color, " ", oneOfLamps.length, "м ", oneOfLamps.width, "м ", oneOfLamps.power, "Вт\n")
+		fmt.Print(oneOfLamps.Name, " ", oneOfLamps.Color, " ", oneOfLamps.Length, "м ", oneOfLamps.Width, "м ", oneOfLamps.Power, "Вт\n")
 	}
 	fmt.Print("\n")
 }

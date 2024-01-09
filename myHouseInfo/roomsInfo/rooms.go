@@ -3,10 +3,10 @@ package roomsInfo
 import "fmt"
 
 type Rooms struct {
-	name   string
-	length float64
-	width  float64
-	height float64
+	Name   string
+	Length float64
+	Width  float64
+	Height float64
 }
 
 func RoomsList() []Rooms {
@@ -19,6 +19,6 @@ func RoomsList() []Rooms {
 func ShowRooms(rooms []Rooms) {
 	fmt.Print("Размеры комнаты(длина, ширина, высота):\n")
 	for _, room := range rooms {
-		fmt.Print(room.name, " ", room.length, room.width, room.height, "\n")
+		fmt.Print(room.Name, " ", room.Length, room.Width, room.Height, "\n")
 	}
 }
