@@ -17,7 +17,7 @@ func RoomsList() []Rooms {
 }
 
 func ShowRooms(rooms []Rooms) {
-	fmt.Print("Размеры комнаты(длина, ширина, высота):\n")
+	fmt.Print("Размеры комнаты (длина, ширина, высота):\n")
 	for _, room := range rooms {
 		fmt.Print(room.Name, " ", room.Length, room.Width, room.Height, "\n")
 	}

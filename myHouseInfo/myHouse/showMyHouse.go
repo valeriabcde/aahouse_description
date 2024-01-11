@@ -33,6 +33,7 @@ func ShowMyHouse() {
 	familyInfo.ShowPersons(persons)
 	familyInfo.ShowPets(pets)
 
+	fmt.Println("В нем есть:")
 	furnitureInfo.ShowTables(tables)
 	furnitureInfo.ShowChairs(chairs)
 	furnitureInfo.ShowBeds(beds)

@@ -80,7 +80,6 @@ func LampsList() []Lamps {
 	tableLamp := Lamps{"лампа", "серая", 0.15, 0.1, 40}
 
 	return []Lamps{chandelier1, chandelier2, tableLamp}
-
 }
 
 func ShowTables(tables []Tables) {

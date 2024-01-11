@@ -8,7 +8,6 @@ import (
 )
 
 func ShowDb() {
-
 	rms := ShowRoomsDb()
 	bds := ShowBedsDb()
 	cnds := ShowConditionersDb()

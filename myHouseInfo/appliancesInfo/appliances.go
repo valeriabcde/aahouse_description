@@ -68,7 +68,6 @@ func FridgesList() []Fridges {
 	fridge := Fridges{"холодильник", "серый", 0.7, 0.67, 1.9}
 
 	return []Fridges{fridge}
-
 }
 
 func ShowTVs(tvs []TVs) {
